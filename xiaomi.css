@@ -52,16 +52,19 @@ li{
 	background-color: #424242;
 	text-align: center;
 	margin-right: 60px;
+	color:#b0b0b0;
+	cursor:pointer;
 }
+
 .top-navbar-cart:hover{
 	background-color: #fff;
-	font-color:#ff6700;
+	color:#ff6700;
 }
 .cart-details{
 	color:#333;
 	height:100px;
 	width:300px;
-	background-color: #fff;
+	background-color: pink;
 	box-shadow: 0 0 4px #ccc;
 	-webkit-box-shadow: 0 0 4px #ccc;
 	-moz-box-shadow: 0 0 4px #ccc;
@@ -69,8 +72,7 @@ li{
 	line-height: 100px;
 	position:absolute;
 	right:60px;
-	display:none;
-	z-index:1;
+	z-index:100;
 }
 .top-navbar-login{
 	float:right;
@@ -220,12 +222,14 @@ li{
 }
 .menu-details{
 	position:absolute;
-	height:450px;
 	background-color: #fff;
+	height:450px;
 	border-top:1px solid #ccc;
 	top:0px;
 	left:230px;
 	box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 5px 30px rgba(0,0,0,0.2);
 	display: none;
 }
 .item-info img{
@@ -347,13 +351,16 @@ li{
 #menu-mid ul li a{
 	display: block;
 	color:#fff;
-	margin-top:50px;
+	margin-top:30px;
+}
+#menu-mid ul li a:hover{
+	color:#ff6700;
 }
 .menu-lines{
 	width:1px;
 	height:50px;
 	position: relative;
-	margin-top:10px;
+	margin-top:20px;
 	background-color: #fff;
 	float:left;
 }
@@ -415,7 +422,12 @@ li{
 .darkgreen-border{
 	border-top:1px solid #00c0a5;
 }
-
+.star-item p{
+	margin-top:10px;
+}
+.star-item-price{
+	color:#ff6700;
+}
 
 /*中部产品分类展示*/
 .mid-area{
@@ -442,7 +454,9 @@ li{
 	text-align: center;
 }
 .sgl-items li:hover{
+	box-shadow: 0px 6px 20px #ccc;
 	-webkit-box-shadow: 0px 6px 20px #ccc;
+	-moz-box-shadow: 0px 6px 20px #ccc;
 }
 
 .sgl-item img{
@@ -497,6 +511,9 @@ li{
 
 #service-details dl dd{
 	margin-top:10px;
+}
+#service-details dl dd a:hover{
+	color:#ff6700;
 }
 #contact{
 	float:right;
