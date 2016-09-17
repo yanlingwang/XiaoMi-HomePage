@@ -63,11 +63,7 @@ window.onload=function(){
     var menu_list=document.getElementById('menu-list');
     var menu_item=document.getElementsByName('menu-item');
     var menu_details=document.getElementsByName('menu-details');
-        menu_details.onmouseout=function(){
-            menu_details.style.display="none";
-            console.log(1)
-        }
-
+    
     for(var i=0;i<menu_item.length;i++){
         menu_item[i].id=i;
         menu_item[i].onmouseover=function(){        
