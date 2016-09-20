@@ -1,0 +1,545 @@
+*{
+	margin:0;
+	padding:0;	
+}
+body{
+	font-size:14px;
+	color:#333;
+	font-family: "Microsoft YaHei";
+	min-width:1000px;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+li{
+	list-style:none;
+}
+.top-navbar,.header{
+	width:100%;
+	z-index: 4;
+	position:absolute;
+}
+
+/*顶部导航栏*/
+.top-navbar{
+	position:absolute;
+	height:40px;
+    font-size:12px;
+    font-color:#b0b0b0;
+    background-color: #333;
+    line-height: 40px;
+}
+.top-navbar a{
+	color:#b0b0b0;
+}
+.top-navbar-list a:hover{
+	color:#fff;
+}
+.top-navbar-list{
+	float:left;
+	height:40px;
+	margin-left: 60px;
+}
+.sep{
+	color:#424242;
+	margin-left:7px;
+	margin-right:3px;
+}
+.top-navbar-cart{
+	float:right;
+	width:120px;
+	background-color: #424242;
+	text-align: center;
+	margin-right: 60px;
+	color:#b0b0b0;
+	cursor:pointer;
+}
+
+.top-navbar-cart:hover{
+	background-color: #fff;
+	color:#ff6700;
+}
+.cart-details{
+	color:#333;
+	height:100px;
+	width:300px;
+	background-color: pink;
+	box-shadow: 0 0 4px #ccc;
+	-webkit-box-shadow: 0 0 4px #ccc;
+	-moz-box-shadow: 0 0 4px #ccc;
+	text-align: center;
+	line-height: 100px;
+	position:absolute;
+	right:60px;
+	z-index:100;
+}
+.top-navbar-login{
+	float:right;
+	width:100px;
+	text-align: center;
+}
+.top-navbar-login a:hover{
+	color:#fff;
+}
+
+
+/*头部*/
+.header{
+	background-color: #fff;
+	top:40px;
+}
+.header-box{
+	margin:0 auto;
+	width:1226px;
+    height:75px;
+	padding-top:25px;
+}
+/*logo*/
+.logo{
+	float:left;
+}
+/*头部选项栏*/
+.header-navbar{
+	z-index: 4;
+	width:650px;
+	margin-left:230px;
+	padding-top:15px;
+	position: absolute;
+}
+.header-navbar a{
+	font-size: 16px;
+}
+.header-navbar a:hover{
+	color:#ff6700;
+}
+.header-navbar li{
+	float:left;
+	height:60px;
+	width:auto;
+	padding:0 10px;
+}
+
+/*搜索框*/
+.search{
+    float:right;
+	width:300px;
+	height:50px;
+    right:0px;
+}
+.search-text{
+	width:240px;
+	height:50px;
+	border:none;
+	border:1px solid #ccc;
+}
+.search-btn{
+	float:right;
+	width:50px;
+	height:50px;
+	background: #fff;
+	border:none;
+	font-family: "Microsoft YaHei";
+	border:1px solid #ccc;
+}
+.search-btn:hover{
+	background-color: #ff6700;
+	color:#fff;
+}
+
+/*头部产品分类导航展开*/
+.header-navbar-details{
+	z-index:3;
+	position:absolute;
+	width:100%;
+	top:100px;
+	height:230px;
+	background-color: #fff;
+	box-shadow: 0px 1px 4px #858181;
+	-webkit-box-shadow: 0px 1px 4px #858181;
+	-moz-box-shadow: 0px 1px 4px #858181;
+	display:none;
+}
+.list a,p{
+	font-size: 12px;
+}
+.list ul{
+	margin:40px 0 0 100px;
+}
+.list ul li{
+    float:left;
+    width:200px;
+    height:190px;
+    text-align: center;
+    color:#ff6700;
+}
+.list ul li .title{
+    margin:10px 0 5px 0;
+}
+
+
+/*内容*/
+.container{
+	width:1226px;
+	margin-top:140px;
+	margin-left:60px;
+	position:absolute;
+}
+/*中间大图展示区域*/
+.menu-show{
+	width:100%;
+	height:460px;
+    position:relative;
+}
+/*页面中间商品分类导航*/
+.menu-list{
+	width:230px;
+	height:430px;
+	z-index: 2;
+	position:absolute;
+	padding:10px 0;
+	background-color: rgba(0,0,0,0.5);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000');background:rgba(0,0,0,0.6);/*IE8*/
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000');background:rgba(0,0,0,0.6);/*older IEs*/
+}
+.menu-list li{
+	width:230px;
+	height:42px;
+	line-height: 40px;
+	text-indent: 25px;
+}
+.menu-list a{
+	color:#fff;
+}
+.menu-icon{
+	font-size:18px;
+	color:rgba(255,255,255,0.5);
+	float:right;
+	margin-right: 25px;
+}
+.menu-item:hover{
+	background-color:#ff6700;
+}
+.menu-details{
+	position:absolute;
+	background-color: #fff;
+	height:450px;
+	border-top:1px solid #ccc;
+	top:0px;
+	left:230px;
+	box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+	display: none;
+}
+.item-info img{
+	width:40px;
+	height:40px;
+	margin-left:10px;
+	background-color: pink;
+}
+.menu-details ul{
+	float:left;
+}
+.menu-details ul li{
+	width:280px;
+	height:60px;
+	padding:15px 0 0 10px;
+}
+.menu-details ul li a{
+	color:#333;
+}
+.item-info{
+    width:170px;
+    height:60px;
+    float:left;
+}
+.item-info img{
+	float:left;
+}
+.item-info span{
+    display: block;
+    color:#333;
+    float:left;
+}
+.item-info span:hover{
+	color:#ff6700;
+}
+.menu-choose{
+	display: block;
+	float:left;
+	margin-top:6px;
+	margin-left:10px;
+    width:53px;
+    height:25px;
+    line-height: 25px;
+    padding-right: 20px;
+    border:1px solid #ff6700;
+}
+.menu-choose:hover{
+    color:#fff;
+    background-color: #ff6700;
+}
+
+/*右侧产品大图轮播展示*/
+#item-show{
+	position:absolute;
+	width:1226px;
+	height:450px;
+	overflow: hidden;
+}
+#item-list{
+    position:absolute;
+    width:8582px;
+	height:450px;
+}
+#item-show ul li{
+    float:left;
+}
+#item-show ul li img{
+    width:1226px;
+	height:450px;
+}
+#prev,#next{
+	display:block;
+	width:40px;
+	height:70px;
+	position:absolute;
+	font-size: 50px;
+	color:#ccc;
+}
+#prev{
+    top:200px;
+    left:230px;
+}
+#prev:hover,#next:hover{
+	color:#fff;
+	background-color: #ccc;
+}
+#next{
+	top:200px;
+	right:0px;
+}
+.item-switch{
+	position:absolute;
+	width:160px;
+	height:20px;
+	z-index:2;
+	margin-right: 40px;
+    right:0px;
+    bottom:20px;
+}
+.item-switch ol li{
+	float:left;
+	margin-left:20px;
+}
+/*中间展示区域*/
+#menu-mid{
+	width:230px;
+	height:170px;
+	float:left;
+	margin-top:20px;
+	background-color: #5f5f50;
+}
+#menu-mid ul li{
+    float:left;
+    width:75px;
+    height:70px;
+    text-indent: 12px;
+    font-color:#b0b0b0;
+}
+#menu-mid ul li a{
+	display: block;
+	color:#fff;
+	margin-top:30px;
+}
+#menu-mid ul li a:hover{
+	color:#ff6700;
+}
+.menu-lines{
+	width:1px;
+	height:50px;
+	position: relative;
+	margin-top:20px;
+	background-color: #fff;
+	float:left;
+}
+#item-mid{
+	float:left;
+}
+#item-mid li{
+	float:left;
+	margin-left: 17px;
+	margin-top:20px;
+}
+#item-mid li a img{
+    width:315px;
+    height:170px;
+}
+
+/*小米明星单品*/
+.show-star{
+	height:420px;
+	overflow: hidden;
+	padding-top:30px;
+	border:1px solid #fff;
+}
+.show-title{
+	font-family: "Microsoft YaHei";
+    font-color:#333;
+	font-size:22px;
+}
+.star-items{
+	position:relative;
+	margin-top:15px;
+}
+.star-items li{
+	float: left;
+	height:350px;
+	width:230px;
+	text-align: center;
+}
+.star-items>li:not(:first-child){
+	margin-left:16px;
+}
+.star-items li img{
+	margin:30px 0 0 15px;
+    width:200px;
+    height:200px;
+}
+.yellow-border{
+	border-top:1px solid #ffac13;
+}
+.lightgreen-border{
+	border-top:1px solid #83c44e;
+}
+.blue-border{
+	border-top:1px solid #2196f3;
+}
+.red-border{
+	border-top:1px solid #e53935;
+}
+.darkgreen-border{
+	border-top:1px solid #00c0a5;
+}
+.star-item p{
+	margin-top:10px;
+}
+.star-item-price{
+	color:#ff6700;
+}
+
+/*中部产品分类展示*/
+.mid-area{
+	position: absolute;
+	top:1250px;
+	width:100%;
+	padding-bottom: 80px;
+	background-color: #f5f5f5;
+}
+.mid-box{
+	width:1226px;
+	margin:0 auto;
+}
+.sgl-items{
+	height:625px;
+	margin-top:20px;
+}
+.first-pic{
+	float:left;
+}
+ .sgl-items li{
+	float:left;
+    margin:10px 0 0 20px;
+	text-align: center;
+}
+.sgl-items li:hover{
+	box-shadow: 0px 6px 20px #ccc;
+	-webkit-box-shadow: 0px 6px 20px #ccc;
+	-moz-box-shadow: 0px 6px 20px #ccc;
+}
+
+.sgl-item img{
+	width:220px;
+	height:294px;
+}
+
+/*智能硬件*/
+.show-hardware{
+	padding-top:60px;	
+}
+
+/*搭配*/
+.show-match{
+	margin-top:60px;
+}
+
+/*底部信息栏*/
+#foot{
+	position:absolute;
+	top:2800px;
+	width:100%;
+	height:280px;
+}
+#foot-box{
+    width:1226px;
+    height:280px;
+    margin:0 auto;
+}
+#service{	
+	height:80px;
+	line-height: 80px;
+	border-bottom: 1px solid #ccc;
+}
+#service a{
+    font-size:16px;
+    margin-left: 115px;
+}
+#service a:hover{
+	color:#ff6700;
+}
+#service-details{
+	width:1226px;
+}
+#service-details dl{
+    float:left;
+    margin:20px 0 0 100px;
+}
+#service-details dl dt{ 
+    margin:30px 0;
+}
+
+#service-details dl dd{
+	margin-top:10px;
+}
+#service-details dl dd a:hover{
+	color:#ff6700;
+}
+#contact{
+	float:right;
+	width:250px;
+	height:130px;
+	border-left:1px solid #ccc;
+	text-align: center;
+	margin-top:50px;
+}
+#contact p{
+	margin-top:5px;
+}
+#tel{
+	font-size: 22px;
+	color:#ff6700;
+}
+#customer-service{
+	border:1px solid #ff6700;
+	width:140px;
+	height:30px;
+	line-height: 30px;
+	margin:18px auto;
+}
+#customer-service:hover{
+	color:#fff;
+	background-color: #ff6700;
+}
+
+
